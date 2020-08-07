@@ -259,6 +259,10 @@ section.area .area-body {
     align-items: center;
 }
 
+#our-projects a {
+    color: #FFF;
+}
+
 #filter-bar {
     display: inline-block;
     background-color: #EEE;
@@ -289,4 +293,127 @@ section.area .area-body {
 #filter-bar ul li.active {
     border-bottom: 3px solid #B28756;
     cursor: pointer;
+}
+
+#projects-gallery {
+    width: 100vw;
+    max-width: 1140px;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects-gallery .picture {
+    width: 280px;
+}
+
+#projects-gallery .picture-area {
+    width: 260px;
+    height: 160px;
+    margin: 10px;
+}
+
+#projects-gallery .picture img {
+    width: inherit;
+    height: inherit;
+}
+
+#projects-gallery .picture-info {
+    box-sizing: border-box;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+
+#projects-gallery .picture-info h5 {
+    margin: 5px 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#projects-gallery .picture-info p {
+    margin: 5px 0;
+}
+
+#projects-gallery .picture-area:hover .picture-info {
+    display: flex;
+}
+
+/****************************************************
+**          OUR TEAM
+****************************************************/
+
+.bg-team {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 0 !important;
+}
+
+.bg-team .bg-cover {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+.bg-team #our-co-workers {
+    max-width: 870px;
+    overflow: hidden;
+}
+
+.bg-team #sliders {
+    width: 1000vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.bg-team .slide {
+    height : 100%;
+    display: inline-block;
+}
+
+.bg-team .slide-card-area {
+    background-color: #FFF;    
+    width: 280px;
+    min-height: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.bg-team #sliders-pointers {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-team .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.bg-team .pointer.active,
+.bg-team .pointer:hover {
+    background-color: #B28756;
 }
