@@ -433,7 +433,7 @@ section.area .area-body {
     background-color: #B28756;
 }
 
-.bg-team #sliders-pointers {
+.sliders-pointers {
     width: 100%;
     height: 20px;
     display: flex;
@@ -441,7 +441,7 @@ section.area .area-body {
     justify-content: center;
 }
 
-.bg-team .pointer {
+.pointer {
     width: 15px;
     height: 15px;
     border: 2px solid #B28756;
@@ -450,7 +450,27 @@ section.area .area-body {
     cursor: pointer;
 }
 
-.bg-team .pointer.active,
-.bg-team .pointer:hover {
+.pointer.active,
+.pointer:hover {
     background-color: #B28756;
+}
+
+#happy-clients .slide-card-area {
+    text-align: center;
+}
+#happy-clients .slide-card-area h3 {
+    font-size: 1.9em;
+}
+#happy-clients .slide-card-area h4 {
+    font-size: 1.2em;
+    color: #000;
+}
+
+#happy-clients .depoiment {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+#happy-clients .depoiment p {
+    max-width: 690px;
 }
