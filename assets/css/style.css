@@ -137,6 +137,11 @@ section.area {
     position: relative;
 }
 
+section.area-min {
+    padding: 10px 0;
+    position: relative;
+}
+
 section.area-light {
     background-color: #F7F7F7;
 }
@@ -604,4 +609,298 @@ section.area .area-body {
     color: #878787;
     font-size: 0.8em;
     line-height: 26px;
+}
+
+/****************************************************
+**          SOME FACTS
+****************************************************/
+#some-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#some-facts .fact {
+    text-align: center;
+    width: 235px;
+    margin: 15px 25px;
+}
+
+#some-facts h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #B28756;
+}
+
+#some-facts .separator {
+    border-bottom: 4px solid #7d7d7d;
+    margin: 10px auto 15px auto;
+    width: 25px;
+}
+
+/****************************************************
+**          SOCIAL MEDIA
+****************************************************/
+#area-social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+#area-social-media .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#area-social-media .title h4 {
+    color: #CCC;
+    margin-left: 15px;
+}
+
+#area-social-media ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    padding: 0;
+}
+
+#area-social-media li {
+    text-align: center;
+    display: flex;
+    align-items: center;    
+    margin: 10px 20px;
+}
+
+#area-social-media .social-item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 4px;
+    background-color: #BBB;
+    border-radius: 50%;
+    width: 30px;
+}
+
+#area-social-media .social-item span {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #A2A2A2;
+}
+
+#area-social-media #social-twitter div {
+    background-color: #35b9fd;
+    padding: 12px 4px;
+}
+#area-social-media #social-linkedin div {
+    background-color: #4e82e9;
+    padding: 12px 4px;
+}
+#area-social-media #social-facebook div {
+    background-color: #1c59bc;
+}
+#area-social-media #social-google-plus div {
+    background-color: #ea4343;
+}
+#area-social-media #social-pinterest div {
+    background-color: #ca0505;
+}
+
+/****************************************************
+**          CONTACT
+****************************************************/
+#contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#contact {
+    width: 660px;
+}
+#contact button.btn {
+    margin-top: 25px;
+    border-style: none;
+}
+#contact .input {
+    width: 100%;
+}
+#contact form input, input:focus, textarea {
+    border-style: none;
+    background-color: #f7f7f7;
+    outline: none;
+    border-bottom: 3px solid #B28756;
+}
+#contact input, textarea {
+    margin: 10px 15px;
+    resize: none;
+    width: 100%;
+}
+#contact div {
+    display: flex;
+    justify-content: center;
+}
+#contact textarea {
+    min-height: 16px;
+    height: 16px;
+    resize: vertical;
+}
+#contact form input,
+              textarea,
+              input::placeholder,
+              textarea::placeholder {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+/****************************************************
+**          LOCATION
+****************************************************/
+section.area-map {
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 25px 0;
+}
+
+#location-info {
+    width: 50%;
+    background-color: #FFF;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    color: #9d9d9d;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+.location-icon {
+    padding: 10px;
+    background-color: #9d9d9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+}
+.location-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.location-icon img {
+    width: 15px;
+}
+
+/****************************************************
+**          FOOTER
+****************************************************/
+#return-top {
+    position: absolute;
+    top: -38px;
+    left: 28px;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 10px;
+}
+#return-top:hover {
+    background-color: #000;
+    border: 1px solid #ccc;
+}
+#return-top img {
+    width: 40px;
+}
+
+#footer-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#footer-area .footer-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#footer-area .footer-item ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+#footer-area .footer-item li {
+    margin: 0 5px;
+}
+#footer-area .footer-item li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #515151;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+}
+#footer-area .footer-item li a:hover {
+    background-color: #B28756;
+}
+
+#footer-area #author {
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+}
+#footer-area a {
+    text-decoration: none;
+    color: #B28756;
+}
+
+#footer-area .footer-item {
+    min-width: 367px;
+    max-width: 376px;
+    margin: 5px;
+    line-height: 25px;
+    font-size: 0.8em;
+    color: #777;
+}
+#footer-area .footer-item:last-child
+{
+    background-color: #515151;
+    border-radius: 5px;
+}
+
+#footer-area .footer-item>form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+#footer-area .footer-item>form input::placeholder {
+    color: #CCC;
+    text-align: center;
+}
+#footer-area .footer-item>form input {
+    background-color: unset;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid #AAA;
+    margin: 10px 0;
+    color: #FFF;
+}
+#footer-area .footer-item>form button.btn {
+    border: none;
+    margin: 10px 0;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
 }
