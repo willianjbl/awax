@@ -904,3 +904,23 @@ section.area-map {
     font-weight: bold;
     font-size: 1em;
 }
+
+/****************************************************
+**          RESPONSIVE
+****************************************************/
+@media (min-width: 450px) and (max-width: 800px) {
+    nav#menu {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 60vw;
+        height: calc(100vh - 100px);
+        z-index: 1000;
+    }
+    nav#menu ul {
+        flex-flow: column;
+        padding: 0 30px;
+        width: 100%;
+    }
+}
